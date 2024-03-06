@@ -1,4 +1,4 @@
-﻿using FarmApp.Lib.Models;
+﻿using FarmApp.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FarmApp.Api.Context

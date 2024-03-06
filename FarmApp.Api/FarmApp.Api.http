@@ -1,6 +1,6 @@
-@FarmApp.Api_HostAddress = http://localhost:5261
+@FarmApp.Api_HostAddress = https://localhost:7081
 
-GET {{FarmApp.Api_HostAddress}}/weatherforecast/
+GET {{FarmApp.Api_HostAddress}}/api/machine/
 Accept: application/json
 
 ###

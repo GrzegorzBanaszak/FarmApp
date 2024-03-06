@@ -1,4 +1,6 @@
 using FarmApp.Api.Context;
+using FarmApp.Api.IServices;
+using FarmApp.Api.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<FarmAppContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("FarmAppConnectionString")));
-
+builder.Services.AddScoped<IMachineService, MachineService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

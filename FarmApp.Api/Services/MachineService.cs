@@ -1,8 +1,10 @@
-﻿using FarmApp.Lib.Dtos;
-using FarmApp.Lib.IServices;
-using FarmApp.Lib.Models;
+﻿using FarmApp.Api.Context;
+using FarmApp.Api.Dtos;
+using FarmApp.Api.IServices;
+using FarmApp.Api.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace FarmApp.Lib.Services
+namespace FarmApp.Api.Services
 {
     public class MachineService : IMachineService
     {
